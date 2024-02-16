@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Games Website</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background_image.jpg'); /* Background image */
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color for readability */
+            border-radius: 10px; /* Add border radius for container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for container */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: slideInFromTop 1s forwards; /* Slide-in animation */
+        }
+
+        @keyframes slideInFromTop {
+            0% { opacity: 0; transform: translateY(-50px); } /* Initial state */
+            100% { opacity: 1; transform: translateY(0); } /* Final state */
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .main-content {
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color for readability */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Enlarge image on hover */
+        .game-image {
+            transition: transform 0.3s ease;
+        }
+
+        .game-image:hover {
+            transform: scale(1.1);
+        }
+
+        .game-link {
+            display: inline-block;
+        }
+
+        .blank-button {
+            display: inline-block;
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .blank-button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Games Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="main-content">
+            <h2>Featured Games</h2>
+            <!-- Example images for animation -->
+            <a href="game1.html" class="game-link"><img src="Retro_Bowl_cover.png" alt="Game 1" class="game-image"></a>
+            <a href="game2.html" class="game-link"><img src="rooftop-snipers-logo.jpg" alt="Game 2" class="game-image"></a>
+            <a href="game3.html" class="game-link"><img src="game_placeholder3.jpg" alt="Game 3" class="game-image"></a>
+            <a href="game4.html" class="game-link"><img src="game_placeholder4.jpg" alt="Game 4" class="game-image"></a>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Games Website. All rights reserved.</p>
+    </footer>
+    <!-- Add the blank button -->
+    <a href="about:blank" target="_blank" class="blank-button">Open in Blank</a>
+</body>
+</html>
